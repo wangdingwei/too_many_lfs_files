@@ -14,7 +14,7 @@ for (( i=1; i<=dircnt; ++i )); do
 	echo dir: $dir
 	mkdir -p $dir
 	cd $dir
-	for (( j=i; j<=1024; ++j )); do
+	for (( j=1; j<=1024; ++j )); do
 		file=$(printf "%s_%04d" $dir $j).bin
 		echo file: $file
 		if [[ ! -e $file ]]; then
